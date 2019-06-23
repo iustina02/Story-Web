@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Stories Web User Guide</title>
+    <link rel="stylesheet" href="css/scholarly.min.css">
+    <script src="js/scholarly.min.js"></script>
+  </head>
+  <body prefix="schema: http://schema.org">
+    <header>
+      <!-- <div class="banner">
+        <img src="scholarly-html.svg" width="227" height="50" alt="Scholarly HTML logo">
+      </div>     -->
+      <h1>Stories Web User Guide</h1>
+    </header>
+
+    <div role="contentinfo">
+    </div>
+
+    <!-- REGISTER -->
+    <section id="register">
+      <h2>Inregistrare</h2>
+      <p style="font-size:large;">
+          Inregistrarea se face accesand site-u la adresa <b><a href="http://localhost:12345/index.php">http://localhost:12345/index.php/.</a></b>
+          Dupa ce formularul e completat cu: numele de familie, prenumele, username-ul, email-ul, parola si confirmarea parolei, apasati butonul 
+          <b>Creaza contul</b>.
+      </p>
+      <img src="images/register.png" width="750" height="450" alt="register">
+    </section>
+
+    <!-- LOGIN -->
+    <section id="login">
+      <h2>Login</h2>
+      <p style="font-size:large;">
+          Daca deja a un cont te poti conecta folosind username-ul si parola la aceeasi adresa <b><a href="http://localhost:12345/index.php">
+            http://localhost:12345/index.php</a></b>
+          si apasand pe butonul <b>Login</b>.
+      <p style="font-size:large;">
+      <p style="font-size:large;">
+          Dupa conectarea cu succes, vei fi directionat catre pagina de start a site-ului <b><a href="http://localhost:12345/home/startPage.php">
+            http://localhost:12345/home/startPage.php  </a></b> de unde iti poti continua activitatea.
+      </p>
+      <img src="images/homepage.png" width="750" height="450" alt="login">
+    </section>
+
+    <!-- PAGINA DE START -->
+    <section id="homePage">
+        <h2>Pagina de start</h2>
+        <img src="images/homepage.png" width="750" height="450" alt="book-search">
+        <p style="font-size:large;">
+            Putem cauta povestile in functie de anumite filtre. <br><br><br>
+            Primul este: dupa <b>varsta</b>. Povestile fiind categorisite dupa varsta potrivita fiecarii povesti.
+            Pentru a putea face acest lucru tot ce aveti de facut este sa apsati pe butonul <b>Categorii</b> si o lista va aparea. De acolo
+            sunteti liberi sa selectari orice doriti.
+        </p>
+        <img src="images/homepageCategorii.png" width="750" height="450" alt="book-search">
+        <p>
+            Aici este pagina cu povesti potrivite pentru copii de <b>9-11 ani</b>.
+        </p>
+        <img src="images/homepageCategorii911.png" width="750" height="450" alt="book-search">
+        <p style="font-size:large;"> <br><br><br>
+            Al doilea criteriu este dupa <b>cuvinte cheie</b> (tags). Astfel incat scriind in bara de search anumite cuvinte precum <i>"printesa",
+                "fata", "alba ca zapada"</i>, ne vor aparea in pagina de start doar povestile ce au legatura cu acele cuvinte.
+        </p>
+        <img src="images/homepageTags.png" width="750" height="450" alt="book-search">        
+        <p>
+           Am folosit cuvantul cheie <b>printesa</b>.<br> <br>
+           Pentru a reveni la pagina de start tot ce trebuie sa faceti este sa apasati pe logo, imaginea de sus-mijloc.     
+        </p>
+    </section>
+
+    <!-- STORIES -->
+    <section id="books">
+        <h2>Povesti</h2>
+        <p style="font-size:large;">
+            O data ce ai selectat o povste pentru a o citi vei fi directionat catre pagina de unde poti citi acea poveste.
+            Un exemplu ar fi "Alba ca Zapada si cei 7 pitici" la adresa <b><a href ="http://localhost:12345/poveste/poveste.php?story=2?page=1">
+                http://localhost:12345/poveste/poveste.php?story=2?page=1</a>.</b>
+            Fiecare poveste in parte are propria adresa iar cand acea adresa este accesata progresul citirii textului acelei povesti va fi salvat si poate 
+            fi vazut pe profilul userului.
+        </p>
+        <img src="images/books1.png" width="750" height="450" alt="book-search">
+        <p style="font-size:large;">
+            Poti sa vizualizezi urmatoarele pagini sau cele anterioare, folosind butonul din dreapta jos a paginii cartii, respectiv butonul 
+            din stanga jos pentru pagina anterioara.  
+        </p>
+        <img src="images/books2.png" width="750" height="450" alt="book-search">
+        <p style="font-size:large;">
+            Unele pagini ale povestilor contin variante de ranspus pentru amuzamentul copiilor si diversitate. Cand ajungeti la o astfel de pagina butonul 
+            pentru urmatoarea pagina dispare si puteti avansa doar alegand o varianta.<br>
+            In acest exemplu avem variantele <i>A</i> si <i>B</i>.
+        </p>
+        <img src="images/books3.png" width="750" height="450" alt="book-search">
+        <p style="font-size:large;">
+            Pentru fiecare din variante povestea va continua insa luand in considerare alegerea facuta. <br>
+            <i>Varianta A</i>
+        </p>
+        <img src="images/books4.png" width="750" height="450" alt="book-search">
+        <p style="font-size:large;">
+            <i>Varianta B</i>
+        </p>
+        <img src="images/books5.png" width="750" height="450" alt="book-search">
+        <p style="font-size:large;">
+            Pentru a reveni la pagina de start tot ce trebuie sa faceti este sa apasati pe logo, imaginea de sus-mijloc. 
+        </p>
+    </section>
+
+    <!-- PERSONAJE -->
+    <section id="articles">
+        <h2>Personaje</h2>
+        <p style="font-size:large;">
+            Pentru a putea vedea cateva detalii despre personajele basmelor trebuie sa da-ti click in primul rand pe o poveste pentru a o citi. <br>
+            Aici va trebui sa apasati butonul <b><a href="http://localhost:12345/personaje/personaje.php?story=2?page=15">Personaje</a></b>
+            care va va directiona catre pagina solicitata.
+            
+        </p>
+        <img src="images/article2.png" width="750" height="450" alt="article-search">
+        <p style="font-size:large;">
+            In cazul de fata avem personajele din "Alba ca Zapada".
+        </p>
+        <img src="images/article1.png" width="750" height="450" alt="article-search">
+        <p style="font-size:large;">
+            Apasand pe butonul <b>Inapoi la poveste</b> ne intoarce la poveste, la pagina la care am ramas pentru a putea citi in continuare.
+        </p>
+        <p style="font-size:large;">
+            Pentru a reveni la pagina de start tot ce trebuie sa faceti este sa apasati pe logo, imaginea de sus-mijloc. 
+        </p>
+    </section>
+
+    <!-- PROFIL -->
+    <section id="videos">
+        <h2>Profil</h2>
+        <p style="font-size:large;">
+            Pentru a ajunge pe pagina profilului tau trebuie sa apesi pe butonul din dreapta sus <b>Contul meu</b>, apoi sa 
+            selectezi <b>Profil</b>.
+        </p>
+        <img src="images/video1.png" width="750" height="450" alt="article-search">
+        <p style="font-size:large;">
+            In pagina de profil putem vedea povestile care sunt in decurs de citire, povestile citite si povestile scrise de userul conectat.
+            Iar in dreapta sunt cateva informatii despre utilizator.
+        </p>
+        <img src="images/video2.png" width="750" height="450" alt="article-search">
+        <p style="font-size:large;">
+            Pentru a vedea listele cu povesti din fiecare categorie tot ce trebuie sa faci este sa apesi pe butoanele viu colorate.
+            Aici vom putea vedea si progresul citirii textului, iar daca selectam o poveste vom fi diretionati la pagina la care am ramas
+            pentru a putea continua sa citim.
+        </p>
+        <img src="images/video3.png" width="750" height="450" alt="article-search">
+
+    </section>
+
+     <!-- SCRIE POVESTE -->
+     <section id="write">
+            <h2>Scrie o poveste</h2>
+            <p style="font-size:large;">
+                Pentru a beneficia de obtiunea de a scrie singur o poveste ce va aparea pe pagina de start si in profilul tau, la 
+                <i>povestile mele</i> trebuie sa ne aflam pe pagina profilului.
+                Apasand butonul <b>Scrie o poveste</b> vom fi redirectionati catre un formular ce trebuie completat cu: <br>
+                <i>titlul povestii, autorul (acesta este completat automat dar se poate schimba), o scurta introducere, o imagine de preferat si pentru
+                    ce varsta este potrivita aceasta poveste
+                </i>. <br> <br>
+                Apoi se va apasa butonul <b>Incepe sa scrii</b>.
+            </p>
+            <img src="images/writeStory.png" width="750" height="450" alt="article-search">
+            <p style="font-size:large;">
+                Pagina ce ne va aparea apoi ne permite sa scriem povestea pe pagini. Putem adauga text si/sau imagine. Pentru a trece la 
+                pagina urmatoarea trebuie sa apasam pe <b>sageata din stanga jos</b>.
+            </p>
+            <img src="images/writeStory1.png" width="750" height="450" alt="article-search">
+            <p style="font-size:large;">
+                Cand povestea a fost finalizata trebuie sa apasati pe butonul <b>Termina</b> si o sa fii directionat catre pagina de start.
+            </p>
+            <img src="images/writeStory2.png" width="750" height="450" alt="article-search">
+            <p>
+                Vei vedea ca daca intri pe povestea scrisa de tine iti vor aparea doua butoane <b>Edit</b> pentru fiecare pagina.
+                Cu ajutorul acestora, poti sa modifici pagina deja scrisa sau sa continui sa-ti scrii povestea. 
+            </p>
+            <img src="images/writeStory3.png" width="750" height="450" alt="article-search">
+    </section>
+
+    <!-- ADAUGA PERSONAJE -->
+    <section id="write">
+            <h2>Adauga personaje la povestea ta</h2>
+            <p style="font-size:large;">
+                Poti sa adaugi personajele povestii tale. Trebuie doar sa selectezi povestea ta, sa apesi pe butonul 
+                <b>Personaje</b>, iar daca povestea este scrisa de tine in dreapta jos iti va aparea butonul <b>Adauga personaj</b>.
+            </p>
+            <img src="images/addCharacter.png" width="750" height="450" alt="article-search">
+            <p style="font-size:large;">
+                Daca dai click pe el iti va aparea un formular. Completeaza-l si apoi apasa butonul <b>Adauga</b> in cazul in care 
+                vrei sa adaugi personajul respectiv, <b>Inchide</b> in caz contrar.
+            </p>
+            <img src="images/addCharacter1.png" width="750" height="450" alt="article-search">
+            <img src="images/addCharacter2.png" width="750" height="450" alt="article-search">
+            <p style="font-size:large;">
+                Pentru a reveni la pagina de start tot ce trebuie sa faceti este sa apasati pe logo, imaginea de sus-mijloc. 
+            </p>
+    </section>
+  </body>
+</html>

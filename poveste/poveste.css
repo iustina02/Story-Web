@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.6;
+    color: #666;
+    background: rgb(238, 238, 238);
+}
+
+#root {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+#menuLeftButton {
+    padding: 0.5%;
+    width: 100%;
+    margin: 0.5%;
+    margin-bottom: 2%;
+    background: #a6c1ee;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.6;
+    color: white;
+    font-size: 20px;
+  }
+
+  .menuLeftA {
+    position: absolute;
+    top: 0;
+    height: 35%;
+    width: 100%;
+    transform: translate(0px, -330px);
+    transition: .5s;
+    background:  linear-gradient(0deg, #f2e2ff 0%, #160480 100%);
+    color: #fff;
+    text-align: center;
+  }
+  .menuLeftA.is--open {
+    transform: translate(0px, 0px);
+    position: absolute;
+  }
+  
+  .menuLeftA ul {
+    list-style: none;
+    padding :0;
+  }
+  .menuLeftA a {
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+  }
+
+  #menuRightButton {
+    padding: 0.5%;
+    width: 100%;
+    margin: 0.5%;
+    background: salmon;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.6;
+    color: white;
+    font-size: 20px;
+    position: relative;
+  }
+  
+  .MenusButtons{
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 1em 0;
+    font-size: 15px;
+    background: #25109b;
+    border: 2px solid #f2e2ff;
+    transition-duration: 0.4s;
+  }
+
+  .MenusButtons:hover {
+    background-color: #f2e2ff;
+    color:black;
+  }
+  
+  .menuRightA {
+    position: absolute;
+    top: 0;
+    height: 35%;
+    width: 100%;
+    transform: translate(0px, -330px);
+    transition: .5s;
+    background:  linear-gradient(0deg, #f2e2ff 0%, #160480 100%);
+    color: #fff;
+    text-align: center;
+  }
+  .menuRightA.is--open {
+    transform: translate(0px, 0px);
+    position: absolute;
+  }
+  
+  .menuRightA ul {
+    list-style: none;
+    padding :0;
+    background: white;
+  }
+
+#startPage {
+  background: #160480;
+  position: absolute;
+  width:46%;
+  height: 20%;
+  opacity: 0;
+  top:18%;
+  left: 27%;
+}
+
+.logo {
+    border-radius: 10%;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: white;
+    display: block;
+    margin: 1rem auto;
+    width: 50%;
+}
+
+.storyImg {
+    border-radius: 10%;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: white;
+    display: block;
+    margin: 1rem auto;
+    width: 70%;
+}
+
+h1 {
+    text-align: center;
+    padding: 1.5rem 2.5rem;
+    background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+    margin: 0 0 2rem 0;
+    font-size: 100%;
+    color: white;
+  }
+
+
+  p {
+    padding: 0 2.5rem 2.5rem;
+    margin: 10%;
+    font-size: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .card {
+    margin-bottom: 3%;
+    background: white;
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .2s linear;
+    width: 100%;
+    position: relative;
+  }
+
+  .card:nth-child(1n) {
+    border-radius: 12px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+
+  .card:nth-child(2n) {
+    border-radius: 12px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+
+  .card:nth-child(2n) h1 {
+    background-image: linear-gradient(120deg, #a6c1ee 0%,  #fbc2eb 100%);
+  }
+
+.bookmark img{
+  width: 10%;
+  position: absolute;
+  top:0;
+}
+  
+  .prevPage{
+    background: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    cursor: pointer;
+    left:2%;
+    border-radius: 12px;
+    display: flex;
+    position: absolute;
+  }
+  
+  i {
+    border: solid rgb(97, 97, 97);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+   }
+
+
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+  .nextPage{
+    background: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    cursor: pointer;
+    float: right;
+    border-radius: 12px;
+    display: flex;
+  }
+  
+  i {
+    border: solid rgb(97, 97, 97);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+   }
+
+   .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  @media screen and (min-width: 768px) {
+    h1{
+      font-size: 120%;
+    }
+
+    p {
+      font-size: 120%;
+    }
+
+    #startPage {
+      width:40%;
+      height: 32%;
+      top:10%;
+      left: 30%;
+    }
+
+    #menuLeftButton {
+        width: 30%;
+        margin: 1%;
+        float: left;
+    }
+
+    #menuRightButton {
+        width: 30%;
+        margin: 1%;
+        float: right;
+    }
+
+    .logo {
+        max-width: 40%;
+      }
+
+    .card {
+      flex: 1 1 calc(50% - 2rem);
+    }
+
+    .prevPage{
+     left:1%;
+     bottom: 0%;
+    }
+  }
+  
+  
+  @media screen and (min-width: 1024px) {
+
+    h1{
+      font-size: 150%;
+    }
+
+    p {
+      font-size: 170%;
+    }
+
+    #startPage {
+      width:30%;
+      max-height: 45%;
+      top:3%;
+      left: 35%;
+    }
+
+    .menuLeftA {
+        height: 200px;
+        width: 30%;
+        margin-left:1%;
+        border-radius: 12px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        float: left;
+    }
+
+    .menuRightA {
+              height: 35%;
+        width: 30%;
+        margin-right:1%;
+        border-radius: 12px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        right: 1%;
+    }
+
+    .logo {
+        max-width: 30%;
+      }
+
+    .card {
+      flex: 1 1 calc(33% - 2rem);
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
+
+    #startPage {
+      width:30%;
+      max-height: 45%;
+      top:3%;
+      left: 35%;
+    }
+
+    .menuLeftA {
+        height: 200px;
+        width: 450px;
+    }
+
+    .menuRightA {
+        height: 200px;
+        width: 450px;
+    }
+
+    .logo {
+        max-width: 30%;
+      }
+
+    .card {
+      flex: 1 1 calc(33% - 2rem);
+    }
+  }
+
+  @media screen and (min-width: 1907px) {
+    .menuRightA {
+      right:11%;
+    }
+
+    #startPage {
+      height: 280px;
+      left:40%;
+      width:20%;
+    }
+  }
+
+  
